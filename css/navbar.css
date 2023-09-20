@@ -1,0 +1,21 @@
+.navbar{
+    background-color: none;
+}
+
+
+
+.navbar-toggler{
+    background-color: #fffefe;
+}
+
+.nav-link{
+    color: #fff !important;
+}
+
+
+@media only screen and (min-width: 992px) {
+    .nav-link{
+        color: #fff !important;
+    }
+}
+
