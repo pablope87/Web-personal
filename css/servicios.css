@@ -1,0 +1,27 @@
+.servicios{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios img{
+    display: none;
+}
+
+.servicios-textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px 40px 0px;
+}
+
+.servicios-textos h5, h4{
+    padding: 40px 0px 40px 0px;
+}
+
+.servicios-textos h5 i{
+    margin-right: 15px;
+}
