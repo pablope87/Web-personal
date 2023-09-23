@@ -33,6 +33,7 @@
   </head>
 
   <body>
+    <section id="inicio">
       <nav class="navbar navbar-expand-md">
           <div class="container">
             <a class="navbar-brand" href="./index.html">
@@ -43,14 +44,15 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link" href="#">Sobre mí</a>
-                <a class="nav-link" href="#">Servicios</a>
-                <a class="nav-link" href="#">Portafolio</a>
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                <a class="nav-link" href="#servicios">Servicios</a>
+                <a class="nav-link" href="#portafolio">Portafolio</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </div>
             </div>
           </div>
         </nav>
+    </section>
 
   <main>
 
@@ -58,7 +60,7 @@
       <div class="hero-text">
         <h1 class=" display-1 animate__animated animate__fadeIn">Pablo Pache</h1>
         <p class="animate__animated animate__fadeIn animate__delay-1s">Soy Diseñador & Programador</p>
-        <button type="button" class="btn btn-outline-warning animate__animated animate__fadeIn animate__delay-2s">Ver trabajos</button>
+        <a href="#portafolio"><button type="button" class="btn btn-outline-warning animate__animated animate__fadeIn animate__delay-2s">Ver trabajos</button></a>
       </div>
     </div>
 
@@ -68,9 +70,9 @@
       <div class="sobre-mi">
         <div class="container">
           <div class="sobre-mi_content">
-            <h1 class="wow animate__animated animate__fadeIn">Sobre Mí</h1>
+            <h1 class="wow animate__animated animate__fadeIn animate__delay-1s">Sobre Mí</h1>
               <div class="container">
-                <p class="wow animate__animated animate__fadeIn">Mi viaje en el mundo del diseño y la programación comenzó hace años, y desde entonces, he estado dedicado a convertir ideas en realidad a través del código y el diseño. Mi enfoque principal es el desarrollo web front end, donde combino mis habilidades de diseño y programación para crear sitios web atractivos y funcionales.</p>
+                <p class="wow animate__animated animate__fadeIn animate__delay-1s">Mi viaje en el mundo del diseño y la programación comenzó hace años, y desde entonces, he estado dedicado a convertir ideas en realidad a través del código y el diseño. Mi enfoque principal es el desarrollo web front end, donde combino mis habilidades de diseño y programación para crear sitios web atractivos y funcionales.</p>
               </div>
           </div>
         </div>
@@ -79,7 +81,8 @@
     <!-- Sobre mi end -->
 
   <!-- Servicios   -->
-  <section class="servicios">
+
+  <section id="servicios" class="servicios">
     <div class="foto-servicios">
       <img src="./resources/images/girlTB.png" alt="foto mujer">
     </div>
@@ -100,10 +103,10 @@
         <i class="fa-solid fa-quote-left"></i>
         <figure class="text-center">
           <blockquote class="blockquote">
-            <p>"Sólo tuve que tomar la idea de hipertexto y conectarlo con las ideas de TCP y DNS y —¡ha-la!— la World Wide Web“</p>
+            <p>"Sólo tuve que tomar la idea de hipertexto y conectarlo con las ideas de TCP y DNS y —¡ha-la!— la World Wide Web.“</p>
           </blockquote>
           <figcaption class="blockquote-footer">
-            Tim Berners-Lee <cite title="Source Title">Científico de la computación, conocido por ser el padre de</cite>
+            Tim Berners-Lee <cite title="Source Title">Científico de la computación, conocido por ser el padre de internet.</cite>
           </figcaption>
         </figure>
       </div>
@@ -112,6 +115,7 @@
   <!-- End Quote -->
 
     <!-- Portafolio SM -->
+    <section id="portafolio">
   <div id="carouselExampleDarkSM" class="carousel carousel-dark slide">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -200,24 +204,53 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+</section>
 
 
   <!-- End Portafolio -->
 
   <!-- Contacto -->
-  <section id="contacto">
-    <div class="container-fluid">
-      <div class="container">
-        <h1>Hablemos, mandame un mensaje</h1>
-        <p>¡Hablemos!
+      <!-- FORM -->
+      <section id="contacto">
+      <div class="contenedor-form">
+        <section id="contacto">
+      <div class="container text-center">
+        <div class="row">
 
-          Si estás buscando un diseñador multimedial y programador web front end comprometido con la excelencia y la creatividad, ¡estoy aquí para ayudarte! No dudes en contactarme para discutir tu proyecto y cómo podemos hacerlo realidad juntos.
-          
-          ¡Espero tener la oportunidad de trabajar contigo y crear algo asombroso!</p>
+          <div class="col-md-6">
+            <div class="contacto-columna1">
+            <h2>¡Hola Hablemos!</h2>
+            <p>pablopache87@gmail.com</p>
+            <p>+549 381 5058030</p>
+            <p>S.M. de Tucumán - Tucumán - Argentina</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+              <div class="container">
+                <h2>Mandame un mensaje</h2>
+                  <form action="https://formspree.io/f/mbjvzqwn" method="post">
+                      <input type="hidden" name="_language" value="es" />
+                      <label for="nombre"></label>
+                      <input type="text" id="nombre" name="nombre-data" placeholder="Tu Nombre">
+      
+                      <label for="email"></label>
+                      <input type="email" id="email" name="email-data" placeholder="Tu Email" required>
+    
+                      <label for="mensaje"></label>
+                      <textarea name="mensaje-data" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+    
+                      <button type="submit" class="btn btn-warning">Enviar</button>
+                  </form>
+              </div>
+          </section>
+          </div>
+        </div>
       </div>
-
     </div>
   </section>
+
+      <!-- END FORM -->
   <!-- End Contacto -->
 
   <!-- Footer -->
@@ -227,10 +260,10 @@
         <div class="footer-section">
           <h3>Enlaces</h3>
           <ul>
-            <li><a href="#">Sobre mí</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Portafolio</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </div>
         <div class="footer-section">
@@ -254,9 +287,9 @@
           <div class="footer-redes">
           <h3>Redes</h3>
           <div class="footer-social">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/pablopache87" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/pablopache87?s=21&t=q1Z-Nv-anHFmwlQPQIhwjw" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/pabloelrulo/" target="_blank"><i class="fab fa-instagram"></i></a>
           </div>
           <div class="logo-footer">
             <a href="#inicio"> <img title="Ir arriba" src="/resources/images/logo.svg" alt="logo"></a>
