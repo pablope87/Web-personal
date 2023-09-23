@@ -13,9 +13,15 @@
 }
 
 
+
 @media only screen and (min-width: 992px) {
     .nav-link{
         color: #fff !important;
     }
+
+    a.nav-link:hover{
+        color:#F4D03F !important;
+    }
+
 }
 

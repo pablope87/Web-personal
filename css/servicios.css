@@ -17,16 +17,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 0px 40px 0px;
+    padding: 20px 0px 10px 0px;
 }
 
 .servicios-textos h5, h4{
-    padding: 40px 0px 40px 0px;
+    padding: 20px 0px 10px 0px;
+    font-weight: 700;
 }
 
-.servicios-textos h5 i{
+.servicios-textos p{
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+}
+.servicios-textos i{
     margin-right: 15px;
 }
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -49,6 +55,9 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        align-items: end;
+        align-items: center;
+    }
+    .servicios-textos{
+        text-align: left;
     }
     }
